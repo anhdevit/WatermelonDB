@@ -1,6 +1,8 @@
 // @flow
 
-import { Observable, switchMap, distinctUntilChanged, throttleTime } from '../../utils/rx'
+import { Observable } from 'rxjs/Observable'
+import { switchMap, distinctUntilChanged, throttleTime } from 'rxjs/operators'
+
 import { logError } from '../../utils/common'
 import { toPromise } from '../../utils/fp/Result'
 import { type Unsubscribe } from '../../utils/subscriptions'

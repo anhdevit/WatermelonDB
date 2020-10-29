@@ -1,56 +1,45 @@
 {
-  "name": "@nozbe/watermelondb",
-  "description": "Build powerful React Native and React web apps that scale from hundreds to tens of thousands of records and remain fast",
-  "version": "0.20.0",
-  "scripts": {
-    "build": "NODE_ENV=production node ./scripts/make.js",
-    "dev": "NODE_ENV=development node ./scripts/make.js",
-    "dev:native": "react-native start",
-    "release": "node ./scripts/publish.js",
-    "prettier": "prettier-eslint --config ./.prettierrc --write \"./src/**/*.js\"",
-    "flow": "flow check",
-    "eslint": "eslint ./src -c ./.eslintrc.yml --cache --cache-location ./.cache/.eslintcache",
-    "tslint": "tslint --project .",
-    "test": "jest --config=./jest.config.js --forceExit --detectOpenHandles --no-cache",
-    "ci:check": "concurrently 'npm run test' 'npm run eslint' 'npm run flow' --kill-others-on-fail",
-    "test:android": "cd native/androidTest; ./gradlew connectedAndroidTest",
-    "test:ios": "cd native/iosTest; xcodebuild -workspace WatermelonTester.xcworkspace -scheme 'WatermelonTester' -destination 'name=iPhone 8' test",
-    "test:typescript": "cd examples/typescript; yarn; npm run test",
-    "swiftlint": "cd native; swiftlint",
-    "ktlint": "cd native/androidTest; ./gradlew ktlint",
-    "ktlint:format": "cd native/androidTest; ./gradlew ktlintFormat",
-    "android:emulator": "./scripts/emulatorWithJavaCheck",
-    "docs": "./scripts/mdbook"
+  "_from": "@nozbe/watermelondb@0.19.0",
+  "_id": "@nozbe/watermelondb@0.19.0",
+  "_inBundle": false,
+  "_integrity": "sha512-x7sclLu/4RDmLzANIYQioKjWdmoIxgqYw7OJnS7UtWEtJGn28l5Z69SWojll/RM0X2KOEem0BIcjqM46CA53GA==",
+  "_location": "/@nozbe/watermelondb",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "@nozbe/watermelondb@0.19.0",
+    "name": "@nozbe/watermelondb",
+    "escapedName": "@nozbe%2fwatermelondb",
+    "scope": "@nozbe",
+    "rawSpec": "0.19.0",
+    "saveSpec": null,
+    "fetchSpec": "0.19.0"
   },
-  "author": "@Nozbe",
-  "homepage": "https://github.com/Nozbe/WatermelonDB#readme",
-  "bugs": "https://github.com/Nozbe/WatermelonDB/issues",
-  "license": "MIT",
-  "keywords": [
-    "database",
-    "indexeddb",
-    "sqlite",
-    "react",
-    "react-native",
-    "watermelon",
-    "offline",
-    "persistence"
+  "_requiredBy": [
+    "/"
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Nozbe/WatermelonDB.git"
+  "_resolved": "https://registry.npmjs.org/@nozbe/watermelondb/-/watermelondb-0.19.0.tgz",
+  "_shasum": "70dae4bfca9dde8d61819a6092846e178a50e2f7",
+  "_spec": "@nozbe/watermelondb@0.19.0",
+  "_where": "/Users/anhdevit/Desktop/rocketchat",
+  "author": {
+    "name": "@Nozbe"
   },
+  "bugs": {
+    "url": "https://github.com/Nozbe/WatermelonDB/issues"
+  },
+  "bundleDependencies": false,
   "dependencies": {
-    "@babel/runtime": "^7.11.2",
     "@nozbe/sqlite": "3.31.1",
-    "lokijs": "npm:@nozbe/lokijs@1.5.10-wmelon3",
+    "lokijs": "npm:@nozbe/lokijs@1.5.10-wmelon0",
     "rambdax": "2.15.0",
-    "rxjs": "^6.5.3",
+    "rxjs": "^6.2.2",
+    "rxjs-compat": "^6.3.2",
     "sql-escape-string": "^1.1.0"
   },
-  "publishConfig": {
-    "access": "public"
-  },
+  "deprecated": false,
+  "description": "Build powerful React Native and React web apps that scale from hundreds to tens of thousands of records and remain fast",
   "devDependencies": {
     "@babel/cli": "^7.6.0",
     "@babel/core": "^7.6.0",
@@ -101,8 +90,9 @@
     "babel-plugin-minify-guarded-expressions": "^0.4.3",
     "babel-plugin-minify-replace": "^0.5.0",
     "babel-plugin-module-resolver": "^3.1.1",
+    "babel-plugin-transform-remove-console": "^6.9.4",
     "better-sqlite3": "^7.1.0",
-    "big-list-of-naughty-strings": "https://github.com/radex/big-list-of-naughty-strings#8346238a82f1e3a6f62389def1e668d80e4023fb",
+    "big-list-of-naughty-strings": "git+https://github.com/radex/big-list-of-naughty-strings.git#8346238a82f1e3a6f62389def1e668d80e4023fb",
     "cavy": "git+https://github.com/Nozbe/cavy.git",
     "chokidar": "^3.0.0",
     "concurrently": "^4.0.1",
@@ -119,7 +109,6 @@
     "fast-async": "^7.0",
     "flow-bin": "^0.109.0",
     "fs-extra": "^8.0.0",
-    "glob-to-regexp": "^0.4.1",
     "inquirer": "^7.0.0",
     "jest": "24.1.0",
     "jsc-android": "^241213.1.0",
@@ -142,5 +131,28 @@
     "tslint": "^5.11.0",
     "tslint-config-prettier": "^1.15.0",
     "typescript": "^3.0.3"
-  }
+  },
+  "homepage": "https://github.com/Nozbe/WatermelonDB#readme",
+  "keywords": [
+    "database",
+    "indexeddb",
+    "sqlite",
+    "react",
+    "react-native",
+    "watermelon",
+    "offline",
+    "persistence"
+  ],
+  "license": "MIT",
+  "main": "./index.js",
+  "name": "@nozbe/watermelondb",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nozbe/WatermelonDB.git"
+  },
+  "sideEffects": false,
+  "version": "0.19.0"
 }

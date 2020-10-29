@@ -1,6 +1,6 @@
 // @flow
 
-import { Observable } from '../__wmelonRxShim'
+import { Observable } from 'rxjs/Observable'
 
 // Performs an action when Observable is disposed; analogous to `Observable.do`
 

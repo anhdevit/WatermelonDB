@@ -73,10 +73,9 @@ async function getLokiAdapter(options: LokiAdapterOptions): mixed {
 }
 
 export async function newLoki(options: LokiAdapterOptions): Loki {
-  const { autosave = true } = options
   const loki = new Loki(options.dbName, {
     adapter: await getLokiAdapter(options),
-    autosave,
+    autosave: true,
     autosaveInterval: 250,
     verbose: true,
   })

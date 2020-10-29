@@ -11,9 +11,3 @@
 #else
 #import "../JSIInstaller.h"
 #endif
-
-#if __has_include("DatabaseDeleteHelper.h")
-#import "DatabaseDeleteHelper.h"
-#else
-#import "../DatabaseDeleteHelper.h"
-#endif
